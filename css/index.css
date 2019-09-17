@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Frijole&display=swap&subset=cyrillic,cyrillic-ext');
+:root {
+	--accent-color: #0c61eb;
+	--font-color: black;
+	font-family: 'Comfortaa', sans-serif !important;
+	scroll-behavior: smooth !important;
+}
+
+body {
+	font-family: 'Comfortaa', sans-serif !important;
+	max-width: 980px;
+	margin: auto;
+	background: #abbaab;
+	background: -webkit-linear-gradient(to bottom, #abbaab, #ffffff);
+	background: linear-gradient(to bottom, #abbaab, #ffffff);
+	/*background: url(../img/grey-background.jpg);
+    background-size: cover;
+    background-attachment: fixed ;*/
+}
+
+.bg-light {
+	background-color: transparent!important;
+	font-family: 'Comfortaa', sans-serif !important;
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-around;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #FF9800;
+	text-shadow: 2px 1px 2px black;
+	transition: 1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: black;
+	text-shadow: 2px 1px 2px #FF9800;
+	transition: 1s;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+		justify-content: space-around;
+		text-align: center;
+	}
+}
+
+div#navbarNav.navbar-collapse.collapse.show {
+	text-decoration: none;
+	color: 1b212b;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: 3px;
+	text-align: center;
+	justify-content: space-around;
+}
+
+a.nav-link {
+	text-decoration: none;
+	color: 1b212b;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: 3px;
+}
+
+a.nav-link:hover {
+	border: 1px solid transparent;
+	text-shadow: 0px 0px 14px rgba(61, 53, 53, 1);
+	border-style: dotted;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+header nav .logo {
+	font-family: 'Frijole', sans-serif;
+	font-size: 2rem;
+	margin: 1rem 0;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: context-menu;
+	text-shadow: 1px 4px 0px rgba(255, 255, 255, 0.96);
+}
+
+header nav .menu {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-around;
+}
+
+header nav .menu li a {
+	text-decoration: none;
+	color: var(--font-color);
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: 3px;
+}
+
+header nav .menu li a:hover {
+	border: 1px solid transparent;
+	text-shadow: 0px 0px 14px rgba(61, 53, 53, 1);
+	border-style: dotted;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+@media (min-width: 600px) {
+	header nav {
+		display: flex;
+		align-items: center;
+	}
+	header nav .menu {
+		flex: 1;
+	}
+	div.our-contact li a {
+		font-size: 68px;
+	}
+}
+
+.navbar-light .navbar-toggler {
+    /* color: #FF9800; */
+    border-color: #FF9800;
+    text-shadow: 9px 7px 16px black;
+    border: solid;
+    color: darkorange;
+}
+.navbar-light .navbar-toggler:hover{
+    line-height: 1;
+    border: solid;
+    border-color: #FF9800;
+    box-shadow: 4px 4px 13px 2px black;
+}
+
+header .banner {
+	background-image: url('../img/dodge.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+header .banner h1 {
+	font-family: 'Frijole', sans-serif;
+	font-size: 6vw;
+	font-weight: inherit;
+	margin: 1rem 0;
+	text-align: center;
+	text-transform: uppercase;
+	background: linear-gradient(9deg, #d81a1a 33%, #f37f07 66%, #7b046e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: black;
+	display: table;
+	cursor: context-menu;
+	transition-duration: 1s
+}
+
+header .banner p {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 5vw;
+	background: white;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+	cursor: context-menu;
+	transition: 1s;
+}
+
+header .banner button .submit {
+	font-family: 'Comfortaa', sans-serif;
+	background: white;
+	font-size: 5vw;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+	cursor: pointer;
+}
+
+header .banner button {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 5vw;
+	background: transparent;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+
+header .banner button:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+}
+
+@media (min-width: 320px) {
+	header .banner h1 {
+		display: flex;
+		align-items: center;
+		font-size: 40px
+	}
+	div.service-info {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 5px;
+		font-size-adjust: inherit;
+	}
+}
+
+@media (min-width: 727px) {
+	header .banner p {
+		display: flex;
+		align-items: center;
+		font-size: 40px;
+	}
+	header .banner button {
+		font-size: 40px;
+	}
+}
+
+button#myBtn{
+    border-color: transparent;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* Стилі для вкладки Сервіс */
+
+.accordion {
+	background: transparent;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.active,
+.accordion:hover {
+	background: transparent;
+}
+
+.accordion:after {
+	content: '\002B';
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+}
+
+.panel {
+	text-align: center;
+	padding: 0 0;
+	background: transparent;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+@media (min-width: 320px) {
+	.accordion {
+		background: transparent;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		white-space: pre-line;
+	}
+}
+
+button:focus {
+	outline: 0px;
+}
+
+div.service-info {
+	padding: 5px 5px;
+}
+
+#more {
+	display: none;
+}
+
+h2#news {
+	text-align: left;
+	font-size: 2.5rem;
+	width: 100%;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+h2#sto {
+	text-align: left;
+	font-size: 2.5rem;
+	width: 100%;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+	div.news {
+		display: flex;
+	}
+}
+
+button#hiddenBtn {
+	background: transparent;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: #323b43;
+	transition: 1s;
+	border-radius: 6px;
+	list-style-type: none;
+}
+
+button#hiddenBtn:hover {
+	border: 4px;
+	text-decoration: none;
+	border-style: dotted;
+	border-radius: 6px;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	cursor: pointer;
+	transition: 1s;
+}
+
+
+}
+div.news {
+	display: flex;
+	background-color: #d81a1a;
+}
+div#news1 {
+	display: grid;
+	width: 100%;
+    border: solid;
+    border-radius: 16px;
+	justify-items: center;
+	padding: 10px;
+    text-align: center;
+    border-color: whitesmoke;
+}
+div#news2 {
+	display: grid;
+	width: 100%;
+    border: solid;
+    border-radius: 16px;
+	justify-items: center;
+	padding: 10px;
+    text-align: center;
+    border-color: whitesmoke;
+}
+
+/*Styles for service buttons*/
+
+/*Планове ТО*/
+button#plan-ts.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.plan-ts {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-image: url('../img/to-check.jpg');
+}
+button#plan-ts.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#plan-ts-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+
+/*Діагностика*/
+button#diagnostic.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.diagnostic {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url('../img/diagnostic.jpg');
+}
+button#diagnostic.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#diagnostic-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+
+/*РЕМОНТ ХОДОВОЇ*/
+button#repair.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.repair {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url('../img/repair.jpg');
+}
+button#repair.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#repair-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+
+/*Двигун та навісне*/
+button#engine.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.engine {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 19% 30%;
+	background-repeat: no-repeat;
+	background-image: url('../img/Charger500.jpg');
+}
+button#engine.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#engine-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+
+/*КПП*/
+button#gear.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.gear {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 980px 300px;
+	background-position: 0% 80%;
+	background-repeat: no-repeat;
+	background-image: url('../img/shift.jfif');
+}
+button#gear.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#gear-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+
+/*Гальмівна система*/
+button#brakes.accordion {
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+div.brakes {
+	border-radius: 6px;
+	width: 100%;
+	vertical-align: middle;
+	background-size: 105%;
+	background-position: 20% 60%;
+	background-repeat: no-repeat;
+	background-image: url('../img/brakes.jpg');
+}
+button#brakes.accordion:hover {
+	border: 4px;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+	transition: 1s;
+	text-decoration: none;
+}
+div#brakes-text.panel {
+	width: 100%;
+	vertical-align: middle;
+	background-color: rgba(68, 68, 68, 0.346);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	text-shadow: 2px 1px 3px #5b6178;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* FF3.6-15 */
+	
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.26) 13%, rgba(0, 0, 0, 0.74) 37%, rgba(0, 0, 0, 0.74) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bd000000', GradientType=0);
+	/* IE6-9 */
+}
+hr.line{
+    color: #d81a1a;
+}
+
+main button#downBtn {
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: transparent;
+    cursor: pointer;
+    color: rgb(245, 1, 1);
+    transition: 1s;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+main button#downBtn:hover {
+    border: 4px;
+    background: transparent;
+	border-style: dotted;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	box-shadow: 0px 1px 46px 19px #0c0a048e;
+	cursor: pointer;
+    transition: 1s;
+    animation: pulse 1.2s ease infinite;
+}
+
+
+
+
+/*MODAL STYLE*/
+.modal-header {
+	font-family: 'Comfortaa', sans-serif !important;
+	display: block;
+	text-align: center;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+	border-bottom: 3px solid #dee2e6;
+}
+div.client-form {
+	display: grid;
+}
+div.client-form label input {
+	width: -webkit-fill-available;
+	text-align: center;
+	border-radius: 25px;
+	outline: 0px;
+}
+div.client-form label textarea {
+	width: -webkit-fill-available;
+	text-align: center;
+	border-radius: 25px;
+	outline: 0;
+	font-size: small;
+	white-space: pre;
+}
+div.client-form label textarea#auto {
+	width: -webkit-fill-available;
+	text-align: center;
+	border-radius: 25px;
+	outline: 0;
+	font-size: small;
+	white-space: pre;
+}
+input.check {
+	flex: left;
+}
+div.client-form2 {
+	display: grid;
+}
+label.work-type {
+	width: -webkit-fill-available;
+	text-align: center;
+	border-radius: 25px;
+	outline: 0px;
+}
+label.work-type:hover {
+	width: -webkit-fill-available;
+	text-align: center;
+	border-radius: 25px;
+	outline: 0px;
+	text-shadow: #f37f07
+}
+div.modal-footer {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: end;
+	justify-content: space-around;
+	padding: 1rem;
+	border-top: 1px solid #dee2e6;
+	border-bottom-right-radius: .3rem;
+	border-bottom-left-radius: .3rem;
+}
+div.contact-info {
+	text-align: center !important;
+}
+footer {
+	border-radius: 6px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+h3#contact {
+	text-align: left;
+	font-size: 2.5rem;
+	width: 100%;
+	font-weight: bold;
+	padding: 10px;
+}
+div.all {
+	background-image: url(../img/footer2.png);
+	background-repeat: round;
+}
+footer ul.our-contact {
+	text-shadow: 2px 2px 3px #FF9800;
+}
+footer ul.our-contact li {
+	list-style: none;
+}
+footer ul.our-contact li a {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 4vw;
+	background: transparent;
+	margin: 0px;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: transparent;
+	cursor: pointer;
+	color: #323b43;
+	transition: 1s;
+	border-radius: 6px;
+	list-style-type: none;
+}
+footer ul.our-contact li a:hover {
+	border: 4px;
+	text-decoration: none;
+	border-style: dotted;
+	border-radius: 6px;
+	color: orange;
+	border-width: 5px;
+	margin: 0;
+	cursor: pointer;
+	transition: 1s;
+}
